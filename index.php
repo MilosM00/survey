@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="robots" content="noindex">
+    <?php include("partials/head.html"); ?>
+
     <link rel="stylesheet" href="styles/index.css">
 
     <title>Survey | Eagle</title>
 </head>
 
 <body>
-    <nav>
-        <a href="#" target="_blank">
-            <img src="images/eagle-logo.webp" alt="Eagle" width="150" />
-        </a>
-    </nav>
+
+    <?php include("partials/navbar.html"); ?>
 
     <div class="container">
 
@@ -629,17 +627,8 @@
 
     </div>
 
+    <?php include("partials/footer.html"); ?>
 
-    <footer>
-        <p>
-            Copyright © <a href="#" target="_blank">Eagle</a> <span class="year-now"></span>.
-        </p>
-    </footer>
 </body>
-
-<script>
-    const date = new Date();
-    document.querySelector(".year-now").textContent = date.getFullYear();
-</script>
 
 </html>
