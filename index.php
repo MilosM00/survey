@@ -17,7 +17,7 @@
 
     <div class="container">
 
-        <form method="POST" action="thank-you.html">
+        <form method="POST" action="thank-you.php">
 
             <h6>
                 <b>Questions marked with a star (<span style="color:#ff0000;">*</span>) are required.</b>
