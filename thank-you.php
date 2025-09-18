@@ -1,3 +1,18 @@
+<?php
+
+    include_once("config/config.php");
+    include_once("classes/Database.php");
+    include_once("classes/Survey.php");
+
+    $survey = new Survey();
+
+    if($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        $survey->insertSurvey($_POST["Q1"], $_POST["Q2"], $_POST["Q3"], $_POST["Q4"], $_POST["Q5"], $_POST["Q6"], $_POST["Q7"], $_POST["Q8"], $_POST["Q9"], $_POST["Q10"], $_POST["Q11"]);
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
