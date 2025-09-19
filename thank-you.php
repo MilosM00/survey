@@ -11,6 +11,12 @@
         $survey->insertSurvey($_POST["Q1"], $_POST["Q2"], $_POST["Q3"], $_POST["Q4"], $_POST["Q5"], $_POST["Q6"], $_POST["Q7"], $_POST["Q8"], $_POST["Q9"], $_POST["Q10"], $_POST["Q11"]);
     }
 
+    else
+    {
+        header("location:index.php");
+        exit;
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +28,8 @@
     <?php include("partials/head.html"); ?>
 
     <link rel="stylesheet" href="styles/thank-you.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
     
     <title>Thank You - Survey | Eagle</title>
 </head>
@@ -38,7 +46,10 @@
         </p>
     </div>
 
-    <?php include("partials/footer.html"); ?>
+    <?php
+        include("partials/admin.html");
+        include("partials/footer.html");
+    ?>
 
 </body>
 
