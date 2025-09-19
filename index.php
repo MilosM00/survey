@@ -7,6 +7,8 @@
     <?php include("partials/head.html"); ?>
 
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
     <title>Survey | Eagle</title>
 </head>
@@ -627,7 +629,10 @@
 
     </div>
 
-    <?php include("partials/footer.html"); ?>
+    <?php
+        include("partials/admin.html");
+        include("partials/footer.html");
+    ?>
 
 </body>
 
