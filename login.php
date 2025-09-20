@@ -18,8 +18,8 @@
             <a href="index.php">
                 <img src="images/eagle-logo.webp" alt="Eagle" />
             </a>
-            <input type="text" placeholder="Username..." name="" />
-            <input type="password" placeholder="Password..." name="" />
+            <input type="text" placeholder="Username..." name="username" />
+            <input type="password" placeholder="Password..." name="password" />
             <button type="submit">Login</button>
         </form>
     </div>
