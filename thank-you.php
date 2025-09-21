@@ -1,8 +1,15 @@
 <?php
 
+    session_start();
+
     include_once("config/config.php");
     include_once("classes/Database.php");
     include_once("classes/Survey.php");
+
+    if(!isset($_SESSION["logged_in"]))
+    {
+        $_SESSION["logged_in"] = false;
+    }
 
     $survey = new Survey();
 
@@ -47,7 +54,7 @@
     </div>
 
     <?php
-        include("partials/admin.html");
+        include("partials/admin.php");
         include("partials/footer.html");
     ?>
 
