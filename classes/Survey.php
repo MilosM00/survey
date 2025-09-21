@@ -35,4 +35,13 @@ class Survey
 
         return true;
     }
+
+    public function getAllAnswers()
+    {
+        $query = "SELECT * FROM " . $this->table . " ORDER BY survey_date ASC";
+        $stmt = $this->connection->prepare($query);
+        $stmt->execute();
+
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
 }
