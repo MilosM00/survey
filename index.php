@@ -1,3 +1,14 @@
+<?php
+
+    session_start();
+
+    if(!isset($_SESSION["logged_in"]))
+    {
+        $_SESSION["logged_in"] = false;
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -630,7 +641,7 @@
     </div>
 
     <?php
-        include("partials/admin.html");
+        include("partials/admin.php");
         include("partials/footer.html");
     ?>
 
